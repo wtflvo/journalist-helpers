@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Better Web Articles</title>
+		<link rel="stylesheet" href="./../index.css" />
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="./apple-touch-icon.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./favicon-32x32.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="./favicon-16x16.png"
+		/>
+		<link rel="manifest" href="./site.webmanifest" />
+	</head>
+	<body>
+		<header>
+			<div class="header-left">
+				<h1>Better Web Articles</h1>
+			</div>
+			<div class="header-right">
+				<a href="#functions-container">Покращити код</a>
+				<a href="#explanation">Як це працює?</a>
+			</div>
+		</header>
+		<main>
+			<div class="functions-container">
+				<h1 class="section-header">Покращити код</h1>
+				<div class="functions">
+					<div class="input-output">
+						<div class="input">
+							<h2>Код, який потрібно покращити</h2>
+							<textarea
+								id="inputTextarea"
+								class="input-area"
+								rows="10"
+							></textarea>
+							<div id="arrow-block" class="arrow-block">
+								<img class="arrow" src="green-sm.png" alt="arr" />
+								<img class="arrow" src="green-sm.png" alt="arr" />
+								<img class="arrow" src="green-sm.png" alt="arr" />
+							</div>
+						</div>
+						<div class="output">
+							<h2>Покращений код</h2>
+							<div class="output-container">
+								<div class="input_copy">
+									<textarea
+										id="outputTextarea"
+										class="txt"
+										rows="10"
+									></textarea>
+
+									<span class="icon" id="copyOutputBtn">
+										<span id="copy-text" class="copy-text">Копіювати</span>
+										<img
+											src="http://clipground.com/images/copy-4.png"
+											title="Click to Copy"
+										/>
+									</span>
+								</div>
+							</div>
+							<div id="arrow-block-2" class="arrow-block">
+								<img class="arrow" src="green-sm.png" alt="arr" />
+								<img class="arrow" src="green-sm.png" alt="arr" />
+								<img class="arrow" src="green-sm.png" alt="arr" />
+							</div>
+						</div>
+						<div>
+							<h2>Перегляд попереднього результату буде тут:</h2>
+							<div id="result" class="result"></div>
+						</div>
+					</div>
+					<div class="buttons">
+						<h2>Опції:</h2>
+						<button id="addSpacesBtn">Додати абзаци</button>
+						<button id="updateVezhaBtn">Оновити гіперпосилання</button>
+					</div>
+				</div>
+			</div>
+			<div id="explanation">
+				<h1 class="section-header">Як це працює?</h1>
+
+				<h2 class="subsection-header">Загальні правила</h2>
+				<p>
+					1. Скопіюйте HTML-код всієї статті/частини статті/фото чи будь-якого
+					іншого елементу.
+				</p>
+				<p>
+					2. Вставте HTML-код в перший поле для вставки("Код, який потрібно
+					покращити").
+				</p>
+				<p>
+					3. Оберіть опцію, яка вам підходить та натисніть відповідну кнопку.
+				</p>
+				<p>
+					4. Перегляньте результат та скопіюйте покращений код з другого поля за
+					допомогою відповідної клавіші.
+				</p>
+
+				<h2 class="subsection-header">Операції</h2>
+				<p>
+					1. <strong>"Додати абзаци"</strong>: Операція додає абзац після
+					кожного зображення.
+				</p>
+				<p>
+					2. <strong>"Оновити гіперпосилання"</strong>: Операція замінює всі
+					посилання "vezha.vn.ua" на посилання з доменом "vezha.ua". Якщо в коді
+					для переробки є фото, то операція видаляє також задані висоту та
+					ширину самого фото (це необхідно для нормального відображення старих
+					фото в оновлених текстах).
+				</p>
+			</div>
+		</main>
+		<script src="./../index.js" type="text/javascript"></script>
+	</body>
+</html>
